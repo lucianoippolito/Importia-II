@@ -1,0 +1,114 @@
+.contenedorportada {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.3fr 0.1fr 0.4fr;
+    grid-template-areas:
+        "cargo cargo cargo cargo"
+        "titulo1 titulo1 titulo1 titulo1"
+        "titulo2 titulo2 titulo2 titulo2"
+        "logos1 logos2 logos3 logos4";
+    margin-bottom: 5%;
+    margin-top: 0;
+    height: 50%;
+    width: 100%;
+    object-fit: contain;
+    .cargo {
+        grid-area: cargo;
+        width: 100%;
+        img {
+            width: 100%;
+            min-width: 350px;
+        }
+    }
+    .titulo1 {
+        font-family: fira sans;
+        font-weight: 400;
+        font-size: 35px;
+        margin: 5%;
+        color: grey;
+        text-align: center;
+        grid-area: titulo1;
+        width: fit-content;
+    }
+    .titulo2 {
+        font-family: fira sans;
+        font-weight: bold;
+        width: 90%;
+        margin: 5%;
+        font-size: 55px;
+        color: grey;
+        text-align: center;
+        grid-area: titulo2;
+        h3 {
+            font-size: 45px;
+            text-align: center;
+        }
+    }
+    .contenedor-logos {
+        position: relative;
+        width: 90%;
+        margin: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 90vw;
+        .logos1 {
+            width: auto;
+            margin: 0 2% 0 0;
+            grid-area: logos1;
+            animation-duration: 2s;
+            animation-name: logos1;
+            transition: 4s;
+            .logoimg {
+                display: block;
+                margin: 0 auto;
+                height: 90%;
+                width: 100%;
+            }
+        }
+        .logos2 {
+            width: auto;
+            margin: 0 2% 0 0;
+            grid-area: logos2;
+            animation-duration: 2s;
+            animation-name: logos1;
+            transition: 4s;
+            .logoimg {
+                display: block;
+                margin: 0 auto;
+                height: 90%;
+                width: 100%;
+            }
+        }
+        .logos3 {
+            width: auto;
+            margin: 0 2% 0 0;
+            grid-area: logos3;
+            animation-duration: 2s;
+            animation-name: logos1;
+            transition: 4s;
+            .logoimg {
+                display: block;
+                margin: 0 auto;
+                height: 90%;
+                width: 100%;
+            }
+        }
+        .logos4 {
+            width: auto;
+            margin: 0 2% 0 0;
+            margin: 0 auto;
+            grid-area: logos4;
+            animation-duration: 2s;
+            animation-name: logos1;
+            transition: 4s;
+            .logoimg {
+                display: block;
+                margin: 0 auto;
+                height: 90%;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+/* ---- DEWALT ----*/
+
+.dw-productos-contenedor{
+    height: auto;
+    width: 100%;
+    .dw-sup-fondo{
+        width: 100%;
+        background-color: #FEBD16;
+        .dw-banner-superior{
+            display: flex;
+            justify-content: center;
+            // height: 90%;
+            // width: 100%;
+            // background-color:#FEBD16;
+            animation-duration: 3s;
+            animation-name: slidein;
+            .dw-logo{
+                width: 13%;
+                height: 80%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .dw-banner-medio{
+        position: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        padding: 2% 0 2% 0;
+        margin: 2% 10% 0% 10%;
+        background-color: #FEBD16;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        img{
+            height: 50%;
+            width: 25%;
+            background-color: black;
+        }
+        h2{
+            font-family: bebas neue;
+            font-size: 35px;
+            color: black;
+            text-align: center;
+            margin-top: 2%;
+            position: relative;
+        }
+    }
+    .titulo-catalogo p {
+        @include productos (#000);
+    }
+    
+    .card{
+        img{
+            @include card-dewalt-img;
+        }
+        .card-text{
+            @include card-dewalt-p;
+        }
+    }
+    .dw-inf-fondo{
+        
+        padding: 0.5rem 0 0 0;
+        .dw-banner-inferior{
+            width: 100%;
+            object-fit: contain;
+            padding-top: 2%;
+            margin-top: 8%;
+            background-color:#FEBD16;            
+            img{
+                @include banner-inferior;
+            }
+        }
+    }
+}
