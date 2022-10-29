@@ -76,10 +76,11 @@ header .navbar {
       width: 100%;
       min-width: 350px; }
   .contenedorportada .titulo1 {
+    width: 70%;
     font-family: fira sans;
     font-weight: 400;
     font-size: 35px;
-    margin: 5%;
+    padding: 5% 15% 2% 15%;
     color: grey;
     text-align: center;
     grid-area: titulo1;
@@ -561,9 +562,9 @@ footer {
 /*----- MEDIA QUERIES --------*/
 @media screen and (max-width: 1150px) {
   /*----INDEX----*/
-  main h3 {
-    font-size: 25px; }
-  .titulo1 h2 {
+  .titulo1 h1 {
+    font-size: 35px; }
+  .titulo2 h3 {
     font-size: 30px;
     margin-top: 45px;
     text-align: center; } }
@@ -572,11 +573,11 @@ footer {
   body {
     min-width: 100vw; }
   /*----INDEX----*/
-  .contenedorportada .titulo1 h2 {
-    font-size: 20px;
-    margin-top: 35px;
+  .contenedorportada .titulo1 h1 {
+    font-size: 25px;
+    margin-top: 20px;
     text-align: center; }
-  .contenedorportada .titulo1 h2 {
+  .contenedorportada .titulo2 h3 {
     font-size: 24px;
     margin-top: 35px;
     text-align: center; }
@@ -603,9 +604,9 @@ footer {
   .columna1 {
     min-width: 65vw; }
   /*----INDEX----*/
-  .titulo1 h2 {
-    font-size: 22px;
-    margin-top: 25px;
+  .titulo1 h1 {
+    font-size: 20px;
+    margin-top: 20px;
     text-align: center; }
   .titulo2 h3 {
     font-size: 35px;
@@ -645,11 +646,11 @@ footer {
     min-width: 350px; }
     .contenedorportada .cargo img {
       width: 100%; }
-    .contenedorportada .titulo1 h2 {
-      font-size: 12px;
+    .contenedorportada .titulo1 h1 {
+      font-size: 15px;
       margin-top: 15px; }
     .contenedorportada .titulo2 h3 {
-      font-size: 19px; }
+      font-size: 15px; }
     .contenedorportada .contenedor-logos {
       display: grid;
       grid-template-columns: 1fr;
