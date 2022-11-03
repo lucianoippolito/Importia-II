@@ -1,4 +1,4 @@
-/* ---- MAKITA ----*/
+/* ---- METABO ----*/
 
 .mt-productos-contenedor{
     height: auto;
@@ -6,12 +6,13 @@
     background-color:#dde6e5;
     .mt-sup-fondo{
         width: 100%;
-        background-color: #1F4942;
+        background: linear-gradient(to top, rgb(31,73,66), rgb(36, 30, 30));
         .mt-banner-superior{
             display: flex;
             justify-content: center;
             height: 90%;
             width: 100%;
+            background: linear-gradient(to top, rgb(31,73,66), rgb(36, 30, 30));
             background-color: #1F4942;
             animation-duration: 3s;
             animation-name: slidein;
@@ -28,6 +29,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        background: linear-gradient(to bottom, rgb(31,73,66), rgb(36, 30, 30));
         justify-content: space-around;
         width: 100%;
         padding: 2% 0 2% 0;
@@ -38,7 +40,7 @@
         background-position: center;
         img{
             width: 10%;
-            background-color: #1F4942;
+            background-color: transparent;
         }
         h2{
             font-family:inherit;
@@ -53,8 +55,13 @@
         @include productos(#1F4942);
     }
     .card{
+        transition: 1s;
+        &:hover{
+            transform: scale(1.01);
+            box-shadow: 0px 10px 10px -6px black;
+        }
         img{
-            @include card-makita-img;
+            @include card-metabo-img;
         }
         .card-text{
             @include card-makita-p;

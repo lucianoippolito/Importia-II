@@ -6,13 +6,13 @@
     background-color: #ddeded;
     .mk-sup-fondo{
         width: 100%;
-        background-color: #0285A2;
+        background: linear-gradient(to top, rgb(2,133,162), rgb(2, 73, 90));
         .mk-banner-superior{
             display: flex;
             justify-content: center;
             height: 90%;
             width: 100%;
-            background-color: #0285A2;
+            background: linear-gradient(to top, rgb(2,133,162), rgb(2, 73, 90));
             animation-duration: 3s;
             animation-name: slidein;
             .mk-logo{
@@ -30,13 +30,12 @@
         justify-content: space-around;
         width: 100%;
         padding: 1% 0 1% 0;
-        background-color: #0285A2;
+        background: linear-gradient(to bottom, rgb(2,133,162), rgb(36, 30, 30));
         text-align: center;
-        
         background-position: center;
         img{
             width: 9%;
-            background-color: #0285A2;
+            background-color: transparent;
         }
         h2{
             font-family:inherit;
@@ -51,6 +50,11 @@
         @include productos (#0285A2);
     }
     .card{
+        transition: 1s;
+        &:hover{
+            transform: scale(1.01);
+            box-shadow: 0px 10px 10px -6px black;;
+        }
         img{
             @include card-makita-img;
         }

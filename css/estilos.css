@@ -250,10 +250,11 @@ main .grid-contacto-contenedor {
   width: 100%; }
   .dw-productos-contenedor .dw-sup-fondo {
     width: 100%;
-    background-color: #FEBD16; }
+    background: linear-gradient(to top, #febd16, #d4a11e); }
     .dw-productos-contenedor .dw-sup-fondo .dw-banner-superior {
       display: flex;
       justify-content: center;
+      background: linear-gradient(to top, #febd16, #d4a11e);
       animation-duration: 3s;
       animation-name: slidein; }
       .dw-productos-contenedor .dw-sup-fondo .dw-banner-superior .dw-logo {
@@ -270,6 +271,7 @@ main .grid-contacto-contenedor {
     padding: 2% 0 2% 0;
     margin: 2% 10% 0% 10%;
     background-color: #FEBD16;
+    box-shadow: 0px 10px 10px -6px black;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center; }
@@ -293,11 +295,16 @@ main .grid-contacto-contenedor {
     margin: 0 auto;
     padding-bottom: 5%;
     padding-top: 5%; }
-  .dw-productos-contenedor .card img {
-    padding: 10%; }
-  .dw-productos-contenedor .card .card-text {
-    font-size: 14px;
-    text-align: left; }
+  .dw-productos-contenedor .card {
+    transition: 1s; }
+    .dw-productos-contenedor .card:hover {
+      transform: scale(1.01);
+      box-shadow: 0px 10px 10px -6px black; }
+    .dw-productos-contenedor .card img {
+      padding: 10%; }
+    .dw-productos-contenedor .card .card-text {
+      font-size: 14px;
+      text-align: left; }
   .dw-productos-contenedor .dw-inf-fondo {
     padding: 0.5rem 0 0 0; }
     .dw-productos-contenedor .dw-inf-fondo .dw-banner-inferior {
@@ -318,13 +325,13 @@ main .grid-contacto-contenedor {
   background-color: #ddeded; }
   .mk-productos-contenedor .mk-sup-fondo {
     width: 100%;
-    background-color: #0285A2; }
+    background: linear-gradient(to top, #0285a2, #02495a); }
     .mk-productos-contenedor .mk-sup-fondo .mk-banner-superior {
       display: flex;
       justify-content: center;
       height: 90%;
       width: 100%;
-      background-color: #0285A2;
+      background: linear-gradient(to top, #0285a2, #02495a);
       animation-duration: 3s;
       animation-name: slidein; }
       .mk-productos-contenedor .mk-sup-fondo .mk-banner-superior .mk-logo {
@@ -339,12 +346,12 @@ main .grid-contacto-contenedor {
     justify-content: space-around;
     width: 100%;
     padding: 1% 0 1% 0;
-    background-color: #0285A2;
+    background: linear-gradient(to bottom, #0285a2, #241e1e);
     text-align: center;
     background-position: center; }
     .mk-productos-contenedor .mk-banner-medio img {
       width: 9%;
-      background-color: #0285A2; }
+      background-color: transparent; }
     .mk-productos-contenedor .mk-banner-medio h2 {
       font-family: inherit;
       font-weight: bolder;
@@ -361,11 +368,16 @@ main .grid-contacto-contenedor {
     margin: 0 auto;
     padding-bottom: 5%;
     padding-top: 5%; }
-  .mk-productos-contenedor .card img {
-    padding: 10%; }
-  .mk-productos-contenedor .card .card-text {
-    font-size: 14px;
-    text-align: left; }
+  .mk-productos-contenedor .card {
+    transition: 1s; }
+    .mk-productos-contenedor .card:hover {
+      transform: scale(1.01);
+      box-shadow: 0px 10px 10px -6px black; }
+    .mk-productos-contenedor .card img {
+      padding: 10%; }
+    .mk-productos-contenedor .card .card-text {
+      font-size: 14px;
+      text-align: left; }
   .mk-productos-contenedor .mk-inf-fondo {
     background-color: white;
     padding: 0; }
@@ -379,19 +391,20 @@ main .grid-contacto-contenedor {
         width: 100%;
         margin: 0 auto; }
 
-/* ---- MAKITA ----*/
+/* ---- METABO ----*/
 .mt-productos-contenedor {
   height: auto;
   width: 100%;
   background-color: #dde6e5; }
   .mt-productos-contenedor .mt-sup-fondo {
     width: 100%;
-    background-color: #1F4942; }
+    background: linear-gradient(to top, #1f4942, #241e1e); }
     .mt-productos-contenedor .mt-sup-fondo .mt-banner-superior {
       display: flex;
       justify-content: center;
       height: 90%;
       width: 100%;
+      background: linear-gradient(to top, #1f4942, #241e1e);
       background-color: #1F4942;
       animation-duration: 3s;
       animation-name: slidein; }
@@ -405,6 +418,7 @@ main .grid-contacto-contenedor {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background: linear-gradient(to bottom, #1f4942, #241e1e);
     justify-content: space-around;
     width: 100%;
     padding: 2% 0 2% 0;
@@ -413,7 +427,7 @@ main .grid-contacto-contenedor {
     background-position: center; }
     .mt-productos-contenedor .mt-banner-medio img {
       width: 10%;
-      background-color: #1F4942; }
+      background-color: transparent; }
     .mt-productos-contenedor .mt-banner-medio h2 {
       font-family: inherit;
       font-weight: bolder;
@@ -430,11 +444,16 @@ main .grid-contacto-contenedor {
     margin: 0 auto;
     padding-bottom: 5%;
     padding-top: 5%; }
-  .mt-productos-contenedor .card img {
-    padding: 10%; }
-  .mt-productos-contenedor .card .card-text {
-    font-size: 14px;
-    text-align: left; }
+  .mt-productos-contenedor .card {
+    transition: 1s; }
+    .mt-productos-contenedor .card:hover {
+      transform: scale(1.01);
+      box-shadow: 0px 10px 10px -6px black; }
+    .mt-productos-contenedor .card img {
+      padding: 10%; }
+    .mt-productos-contenedor .card .card-text {
+      font-size: 14px;
+      text-align: left; }
   .mt-productos-contenedor .mt-inf-fondo {
     background-color: #e41919;
     padding: 0; }
@@ -455,11 +474,11 @@ main .grid-contacto-contenedor {
   width: 100%; }
   .mw-productos-contenedor .mw-sup-fondo {
     width: 100%;
-    background-color: #DB021D; }
+    background: linear-gradient(to bottom, #6e0310, #DB021D); }
     .mw-productos-contenedor .mw-sup-fondo .mw-banner-superior {
       display: flex;
       justify-content: center;
-      width: 100%;
+      background: linear-gradient(to bottom, #6e0310, #DB021D);
       animation-duration: 3s;
       animation-name: slidein; }
       .mw-productos-contenedor .mw-sup-fondo .mw-banner-superior .mw-logo {
@@ -471,6 +490,7 @@ main .grid-contacto-contenedor {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 10px 10px -6px #484848;
     width: 80%;
     padding: 2% 0 2% 0;
     margin: 2% 10% 0% 10%;
@@ -507,6 +527,16 @@ main .grid-contacto-contenedor {
       display: block;
       width: 100%;
       margin: 0 auto; }
+  .mw-productos-contenedor .card {
+    transition: 1s; }
+    .mw-productos-contenedor .card:hover {
+      transform: scale(1.01);
+      box-shadow: 0px 10px 10px -6px #3b3a3a; }
+    .mw-productos-contenedor .card img {
+      padding: 10%; }
+    .mw-productos-contenedor .card .card-text {
+      font-size: 14px;
+      text-align: left; }
 
 /* -- EMPRESA -- */
 .container-fluid {
