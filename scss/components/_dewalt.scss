@@ -38,7 +38,7 @@
             width: 25%;
             background-color: black;
         }
-        h2{
+        h4{
             font-family: bebas neue;
             font-size: 35px;
             color: black;
@@ -47,10 +47,11 @@
             position: relative;
         }
     }
-    .titulo-catalogo p {
+    .titulo-catalogo {
+        p {
         @include productos (#000);
+        }
     }
-    
     .card{
         transition: 1s;
         &:hover{

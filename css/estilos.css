@@ -59,102 +59,205 @@ header .navbar {
           color: #2CAAE1;
           transform: scale(2); }
 
-.contenedorportada {
+.contenedor-portada {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.3fr 0.1fr 0.4fr;
-  grid-template-areas: "cargo cargo cargo cargo" "titulo1 titulo1 titulo1 titulo1" "titulo2 titulo2 titulo2 titulo2" "logos1 logos2 logos3 logos4";
+  grid-template-rows: 1fr 0.1fr 0.1fr 0.4fr 0.4fr;
+  grid-template-areas: "cargo" "titulo1" "titulo2" "cont-logos" "cont-logos";
   margin-bottom: 5%;
   margin-top: 0;
   height: 50%;
   width: 100%;
-  object-fit: contain; }
-  .contenedorportada .cargo {
+  object-fit: contain;
+  /*  -------------------------------------------- */ }
+  .contenedor-portada .cargo {
     grid-area: cargo;
     width: 100%; }
-    .contenedorportada .cargo img {
+    .contenedor-portada .cargo img {
       width: 100%;
       min-width: 350px; }
-  .contenedorportada .titulo1 {
-    width: 70%;
-    font-family: fira sans;
-    font-weight: 400;
-    font-size: 35px;
-    padding: 5% 15% 2% 15%;
-    color: grey;
+  .contenedor-portada .titulo2 h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    padding: 1.5em 0em;
+    top: 18%;
+    left: 50%;
+    width: 40em;
+    margin: 0 auto; }
+  .contenedor-portada span {
+    font-size: 45px;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(../../img/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden; }
+
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%; }
+  100% {
+    background-position: 100% 50%; } }
+
+.titulo1 h1 {
+  height: 1px;
+  width: 70%;
+  font-family: fira sans;
+  font-size: 25px;
+  padding: 5% 15% 2% 15%;
+  color: grey;
+  text-align: center;
+  grid-area: titulo1;
+  width: fit-content; }
+
+.titulo2 {
+  font-family: fira sans;
+  font-weight: bold;
+  width: 90%;
+  margin: 5%;
+  font-size: 55px;
+  color: grey;
+  text-align: center;
+  grid-area: titulo2; }
+  .titulo2 h3 {
+    font-size: 45px;
     text-align: center;
-    grid-area: titulo1;
-    width: fit-content; }
-  .contenedorportada .titulo2 {
-    font-family: fira sans;
-    font-weight: bold;
-    width: 90%;
-    margin: 5%;
-    font-size: 55px;
-    color: grey;
-    text-align: center;
-    grid-area: titulo2; }
-    .contenedorportada .titulo2 h3 {
-      font-size: 45px;
-      text-align: center; }
-  .contenedorportada .contenedor-logos {
+    margin-top: 8%; }
+
+h2 {
+  pointer-events: none; }
+
+.container-prod {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "logos1 logos2" "logos3 logos4";
+  grid-area: cont-logos;
+  width: 83%;
+  height: 100%; }
+  .container-prod .tarjeta {
     position: relative;
-    width: 90%;
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    min-width: 90vw; }
-    .contenedorportada .contenedor-logos .logos1 {
-      width: auto;
-      margin: 0 2% 0 0;
-      grid-area: logos1;
-      animation-duration: 2s;
-      animation-name: logos1;
-      transition: 4s; }
-      .contenedorportada .contenedor-logos .logos1 .logoimg {
-        display: block;
-        margin: 0 auto;
-        height: 90%;
-        width: 100%; }
-    .contenedorportada .contenedor-logos .logos2 {
-      width: auto;
-      margin: 0 2% 0 0;
-      grid-area: logos2;
-      animation-duration: 2s;
-      animation-name: logos1;
-      transition: 4s; }
-      .contenedorportada .contenedor-logos .logos2 .logoimg {
-        display: block;
-        margin: 0 auto;
-        height: 90%;
-        width: 100%; }
-    .contenedorportada .contenedor-logos .logos3 {
-      width: auto;
-      margin: 0 2% 0 0;
-      grid-area: logos3;
-      animation-duration: 2s;
-      animation-name: logos1;
-      transition: 4s; }
-      .contenedorportada .contenedor-logos .logos3 .logoimg {
-        display: block;
-        margin: 0 auto;
-        height: 90%;
-        width: 100%; }
-    .contenedorportada .contenedor-logos .logos4 {
-      width: auto;
-      margin: 0 2% 0 0;
-      margin: 0 auto;
-      grid-area: logos4;
-      animation-duration: 2s;
-      animation-name: logos1;
-      transition: 4s; }
-      .contenedorportada .contenedor-logos .logos4 .logoimg {
-        display: block;
-        margin: 0 auto;
-        height: 90%;
-        width: 100%; }
+    min-width: 150px;
+    min-height: 60px;
+    width: 89%;
+    height: 83%;
+    background-color: #eeeeee;
+    overflow: hidden;
+    margin-bottom: 5%; }
+    .container-prod .tarjeta:before {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      top: -10px;
+      left: 32px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background-color: #f7f6f2; }
+    .container-prod .tarjeta:after {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      bottom: -10px;
+      left: 32px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background-color: #f7f6f2; }
+    .container-prod .tarjeta h2 {
+      z-index: 99;
+      font-family: "Poppins", sans-serif;
+      position: absolute;
+      bottom: 0;
+      right: 25%;
+      font-size: 58px;
+      font-weight: 700;
+      color: #fff; }
+    .container-prod .tarjeta p {
+      z-index: 99;
+      position: absolute;
+      top: 5%;
+      right: 15%;
+      color: #333;
+      opacity: 0.7;
+      font-size: 12px;
+      letter-spacing: 1px;
+      writing-mode: vertical-lr;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+    .container-prod .tarjeta .pic {
+      object-fit: contain;
+      z-index: 100;
+      width: 80%;
+      height: 100%;
+      background-size: 100% 100%;
+      filter: grayscale(100%); }
+    .container-prod .tarjeta:hover i {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+    .container-prod .tarjeta .boton {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.5s ease;
+      mix-blend-mode: hard-light; }
+      .container-prod .tarjeta .boton .linkcito {
+        padding: 1px 12px 1px 5px;
+        height: 30px;
+        width: 30px; }
+      .container-prod .tarjeta .boton i {
+        font-size: 3rem; }
+    .container-prod .tarjeta:hover .boton {
+      transform: scale(16.5); }
+    .container-prod .tarjeta:hover p {
+      color: #1b1a1a; }
+    .container-prod .tarjeta:hover .pic {
+      filter: grayscale(0); }
+  .container-prod .tarj-dw {
+    grid-area: logos1; }
+    .container-prod .tarj-dw .pic {
+      background-image: url("../../img/ficha1.jpg"); }
+    .container-prod .tarj-dw .boton-dw {
+      background-color: #FEBD16; }
+  .container-prod .tarj-mw {
+    grid-area: logos2; }
+    .container-prod .tarj-mw .pic {
+      background-image: url("../../img/ficha2.webp"); }
+    .container-prod .tarj-mw .boton-mw {
+      background-color: #DB021D; }
+  .container-prod .tarj-mk {
+    grid-area: logos3; }
+    .container-prod .tarj-mk .pic {
+      background-image: url("../../img/ficha3.png"); }
+    .container-prod .tarj-mk .boton-mk {
+      background-color: #0285A2; }
+  .container-prod .tarj-mt {
+    grid-area: logos4; }
+    .container-prod .tarj-mt .pic {
+      background-image: url("../../img/ficha4.jpeg"); }
+    .container-prod .tarj-mt .boton-mt {
+      background-color: #1F4942; }
 
 /* ------ CONTACTO ------ */
 main .grid-contacto-contenedor {
@@ -279,7 +382,7 @@ main .grid-contacto-contenedor {
       height: 50%;
       width: 25%;
       background-color: black; }
-    .dw-productos-contenedor .dw-banner-medio h2 {
+    .dw-productos-contenedor .dw-banner-medio h4 {
       font-family: bebas neue;
       font-size: 35px;
       color: black;
@@ -593,11 +696,13 @@ footer {
 @media screen and (max-width: 1150px) {
   /*----INDEX----*/
   .titulo1 h1 {
-    font-size: 35px; }
-  .titulo2 h3 {
-    font-size: 30px;
+    font-size: 25px; }
+  .contenedor-portada .titulo2 h3 {
+    font-size: 40px;
     margin-top: 45px;
-    text-align: center; } }
+    text-align: center; }
+  .container-prod .tarjeta h2 {
+    font-size: 50px; } }
 
 @media screen and (max-width: 1000px) {
   body {
@@ -611,16 +716,16 @@ footer {
     font-size: 24px;
     margin-top: 35px;
     text-align: center; }
-  .contenedorportada .contenedor-logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 5%;
-    grid-template-areas: "logos1 logos2" "logos3 logos4";
-    justify-items: stretch;
+  .container-prod .tarjeta h2 {
+    font-size: 40px; }
+  .dw-productos-contenedor .dw-banner-medio h4 {
+    font-size: 20px;
     width: 80%;
-    padding-left: 10%;
-    padding-right: 10%; }
+    margin: 0 auto; }
+  .mw-productos-contenedor .mw-banner-medio h4 {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto; }
   /*---- CONTACTO -----*/
   .columna1 {
     min-width: 50vw; } }
@@ -630,6 +735,33 @@ footer {
     min-width: 350px; }
   main {
     margin-top: 0; }
+  .contenedor-portada {
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.4fr 0.4fr; }
+    .contenedor-portada .titulo1 h1 {
+      font-size: 20px; }
+    .contenedor-portada .titulo2 h3 {
+      font-size: 30px;
+      text-align: center; }
+    .contenedor-portada .titulo2 h4 {
+      padding: 1.5em 0em;
+      width: auto; }
+    .contenedor-portada span {
+      font-size: 25px; }
+  .container-prod {
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logos1" "logos2" "logos3" "logos4";
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 45%; }
+  .tarjeta {
+    margin: 21%; }
+    .tarjeta h2 {
+      font-size: 35px; }
   /*---- CONTACTO -----*/
   .columna1 {
     min-width: 65vw; }
@@ -637,9 +769,6 @@ footer {
   .titulo1 h1 {
     font-size: 20px;
     margin-top: 20px;
-    text-align: center; }
-  .titulo2 h3 {
-    font-size: 35px;
     text-align: center; }
   /*-- MILWAUKEE -- */
   .mk-productos-contenedor .mw-banner-medio h2 {
@@ -663,60 +792,52 @@ footer {
     font-size: 40px; } }
 
 @media screen and (max-width: 520px) {
-  main {
-    padding-bottom: 0px; }
-  footer {
-    background: linear-gradient(to bottom, #867f7f, #241e1e);
-    min-width: 350px; }
   /*----INDEX----*/
-  .contenedorportada {
+  .contenedor-portada {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 350px; }
-    .contenedorportada .cargo img {
-      width: 100%; }
-    .contenedorportada .titulo1 h1 {
-      font-size: 15px;
-      margin-top: 15px; }
-    .contenedorportada .titulo2 h3 {
-      font-size: 15px; }
-    .contenedorportada .contenedor-logos {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "logos1" "logos2" "logos3" "logos4";
-      justify-items: center;
-      align-items: center;
-      width: 90%;
-      margin: 0 auto;
-      position: relative; }
-      .contenedorportada .contenedor-logos .logos1 .logoimg {
-        height: 90%;
-        width: 70%; }
-      .contenedorportada .contenedor-logos .logos2 .logoimg {
-        height: 90%;
-        width: 70%; }
-      .contenedorportada .contenedor-logos .logos3 .logoimg {
-        height: 90%;
-        width: 70%; }
-      .contenedorportada .contenedor-logos .logos4 {
-        width: 70%; }
-        .contenedorportada .contenedor-logos .logos4 .logoimg {
-          height: 90%;
-          width: 95%; }
+    .contenedor-portada .titulo1 h1 {
+      font-size: 12px; }
+    .contenedor-portada .titulo2 h3 {
+      font-size: 20px;
+      margin-top: 45px;
+      text-align: center; }
+    .contenedor-portada .titulo2 h4 span {
+      font-size: 25px; }
+  .cargo {
+    height: 35%; }
+  .cargo img {
+    width: 100%; }
+  .titulo1 h1 {
+    font-size: 15px;
+    margin-top: 15px; }
+  .titulo2 h3 {
+    font-size: 15px; }
+  .container-prod .tarjeta h2 {
+    font-size: 25px; }
+  .container-prod .tarjeta p {
+    font-size: 5px;
+    writing-mode: horizontal-tb;
+    letter-spacing: normal;
+    top: 13%;
+    right: 3%; }
+  footer {
+    background: linear-gradient(to bottom, #867f7f, #241e1e);
+    min-width: 350px; }
   /*--- EMPRESA ---*/
   .columna1 {
     width: 100vw; }
   /*--- DEWALT ---*/
-  .dw-productos-contenedor .dw-banner-medio h2 {
+  .dw-productos-contenedor .dw-banner-medio h4 {
     font-size: 12px;
     width: 80%;
     margin: 0 auto;
     padding: 2%; }
   .dw-productos-contenedor .dw-banner-inferior img {
     width: 40%; }
-  .mw-productos-contenedor .mw-banner-medio h2 {
+  .mw-productos-contenedor .mw-banner-medio h4 {
     font-size: 12px;
     width: 80%;
     margin: 0 auto; } }
