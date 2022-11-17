@@ -244,7 +244,6 @@
         .tarjeta {
             h2 {
                 font-size: 25px;
-
             }
 
             p {
@@ -254,84 +253,90 @@
                 top: 13%;
                 right: 3%;
             }
-        }
-    }
-    footer {
-        background: linear-gradient(to bottom, rgb(134, 127, 127), rgb(36, 30, 30));
-        min-width: 350px;
-    }
 
-
-
-    /*--- EMPRESA ---*/
-
-    .columna1 {
-        width: 100vw;
-    }
-
-    /*--- DEWALT ---*/
-    .dw-productos-contenedor {
-
-        .card {
-            margin-left: 10%;
-            margin-right: 10%;
-
-            .card-text {
-                font-size: 12px;
-            }
-        }
-
-        .dw-banner-medio {
-            h4 {
-                font-size: 12px;
-                width: 80%;
-                margin: 0 auto;
-                padding: 2%;
-            }
-
-
-            .dw-banner-inferior img {
-                width: 40%;
+            &:hover .boton {
+                transform: scale(12);
             }
         }
     }
+}
 
-    .mw-productos-contenedor {
-        .card {
-            margin-left: 10%;
-            margin-right: 10%;
+footer {
+    background: linear-gradient(to bottom, rgb(134, 127, 127), rgb(36, 30, 30));
+    min-width: 350px;
+}
 
-            .card-text {
-                font-size: 12px;
-            }
+
+
+/*--- EMPRESA ---*/
+
+.columna1 {
+    width: 100vw;
+}
+
+/*--- DEWALT ---*/
+.dw-productos-contenedor {
+
+    .card {
+        margin-left: 10%;
+        margin-right: 10%;
+
+        .card-text {
+            font-size: 12px;
         }
+    }
 
-        .mw-banner-medio h4 {
-            font-size: 10px;
+    .dw-banner-medio {
+        h4 {
+            font-size: 12px;
             width: 80%;
+            margin: 0 auto;
+            padding: 2%;
+        }
+
+
+        .dw-banner-inferior img {
+            width: 40%;
+        }
+    }
+}
+
+.mw-productos-contenedor {
+    .card {
+        margin-left: 10%;
+        margin-right: 10%;
+
+        .card-text {
+            font-size: 12px;
         }
     }
 
-    .mk-productos-contenedor {
+    .mw-banner-medio h4 {
+        font-size: 10px;
+        width: 80%;
+    }
+}
 
-        .card {
-            margin-left: 10%;
-            margin-right: 10%;
+.mk-productos-contenedor {
 
-            .card-text {
-                font-size: 12px;
-            }
+    .card {
+        margin-left: 10%;
+        margin-right: 10%;
+
+        .card-text {
+            font-size: 12px;
         }
     }
-    .mt-productos-contenedor {
+}
 
-            .card {
-                margin-left: 10%;
-                margin-right: 10%;
+.mt-productos-contenedor {
 
-                .card-text {
-                    font-size: 12px;
-                }
-            }
+    .card {
+        margin-left: 10%;
+        margin-right: 10%;
+
+        .card-text {
+            font-size: 12px;
+        }
     }
 }
