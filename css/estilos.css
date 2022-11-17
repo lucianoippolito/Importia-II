@@ -603,7 +603,7 @@ main .grid-contacto-contenedor {
     background-position: center; }
     .mw-productos-contenedor .mw-banner-medio img {
       height: 50%; }
-    .mw-productos-contenedor .mw-banner-medio h2 {
+    .mw-productos-contenedor .mw-banner-medio h4 {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 20px;
       color: white;
@@ -771,11 +771,11 @@ footer {
     margin-top: 20px;
     text-align: center; }
   /*-- MILWAUKEE -- */
-  .mk-productos-contenedor .mw-banner-medio h2 {
+  .mw-productos-contenedor .mw-banner-medio h4 {
     font-size: 15px;
     width: 80%;
-    margin: 0 auto; }
-  .mk-productos-contenedor .titulo-catalogo p {
+    margin: 2% auto; }
+  .mw-productos-contenedor .titulo-catalogo p {
     font-size: 40px; }
   /*-- MAKITA -- */
   .mk-productos-contenedor .dw-banner-medio h2 {
@@ -830,14 +830,33 @@ footer {
   .columna1 {
     width: 100vw; }
   /*--- DEWALT ---*/
+  .dw-productos-contenedor .card {
+    margin-left: 10%;
+    margin-right: 10%; }
+    .dw-productos-contenedor .card .card-text {
+      font-size: 12px; }
   .dw-productos-contenedor .dw-banner-medio h4 {
     font-size: 12px;
     width: 80%;
     margin: 0 auto;
     padding: 2%; }
-  .dw-productos-contenedor .dw-banner-inferior img {
+  .dw-productos-contenedor .dw-banner-medio .dw-banner-inferior img {
     width: 40%; }
+  .mw-productos-contenedor .card {
+    margin-left: 10%;
+    margin-right: 10%; }
+    .mw-productos-contenedor .card .card-text {
+      font-size: 12px; }
   .mw-productos-contenedor .mw-banner-medio h4 {
-    font-size: 12px;
-    width: 80%;
-    margin: 0 auto; } }
+    font-size: 10px;
+    width: 80%; }
+  .mk-productos-contenedor .card {
+    margin-left: 10%;
+    margin-right: 10%; }
+    .mk-productos-contenedor .card .card-text {
+      font-size: 12px; }
+  .mt-productos-contenedor .card {
+    margin-left: 10%;
+    margin-right: 10%; }
+    .mt-productos-contenedor .card .card-text {
+      font-size: 12px; } }

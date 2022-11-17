@@ -6,13 +6,14 @@
     .titulo1 h1 {
         font-size: 25px;
     }
-    .contenedor-portada{
-        .titulo2 h3{
-            
+
+    .contenedor-portada {
+        .titulo2 h3 {
+
             font-size: 40px;
             margin-top: 45px;
             text-align: center;
-            }
+        }
     }
 
     .container-prod {
@@ -22,10 +23,10 @@
             }
         }
     }
-    
-        
-    }
-    
+
+
+}
+
 @media screen and (max-width:1000px) {
     body {
         min-width: 100vw;
@@ -62,6 +63,7 @@
             margin: 0 auto;
         }
     }
+
     .mw-productos-contenedor {
         .mw-banner-medio h4 {
             font-size: 20px;
@@ -86,24 +88,30 @@
     main {
         margin-top: 0;
     }
-    .contenedor-portada{
+
+    .contenedor-portada {
         grid-template-rows: 0.1fr 0.1fr 0.1fr 0.4fr 0.4fr;
-        .titulo1 h1{
+
+        .titulo1 h1 {
             font-size: 20px;
         }
+
         .titulo2 h3 {
             font-size: 30px;
             text-align: center;
         }
+
         .titulo2 h4 {
             padding: 1.5em 0em;
             width: auto;
-            }
-            span {
-                font-size: 25px;
+        }
 
-            }
+        span {
+            font-size: 25px;
+
+        }
     }
+
     .container-prod {
         display: grid;
         margin: 0 auto;
@@ -123,6 +131,7 @@
 
     .tarjeta {
         margin: 21%;
+
         h2 {
             font-size: 35px;
         }
@@ -131,109 +140,114 @@
 
 
 
-/*---- CONTACTO -----*/
-.columna1 {
-    min-width: 65vw;
-}
-
-/*----INDEX----*/
-.titulo1 h1 {
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-
-
-
-
-/*-- MILWAUKEE -- */
-.mk-productos-contenedor {
-    .mw-banner-medio h2 {
-        font-size: 15px;
-        width: 80%;
-        margin: 0 auto;
+    /*---- CONTACTO -----*/
+    .columna1 {
+        min-width: 65vw;
     }
 
-    .titulo-catalogo p {
-        font-size: 40px;
-    }
-}
-
-/*-- MAKITA -- */
-.mk-productos-contenedor {
-    .dw-banner-medio h2 {
-        font-size: 15px;
-        width: 80%;
-        margin: 0 auto;
+    /*----INDEX----*/
+    .titulo1 h1 {
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
     }
 
-    .titulo-catalogo p {
-        font-size: 40px;
-    }
-}
 
-/*-- METABO -- */
-.mt-productos-contenedor {
-    .titulo-catalogo p {
-        font-size: 40px;
-    }
-}
 
-/*-- DEWALT -- */
-.dw-productos-contenedor {
-    .titulo-catalogo p {
-        font-size: 40px;
+
+
+    /*-- MILWAUKEE -- */
+    .mw-productos-contenedor {
+        .mw-banner-medio h4 {
+            font-size: 15px;
+            width: 80%;
+            margin: 2% auto;
+        }
+
+        .titulo-catalogo p {
+            font-size: 40px;
+        }
     }
-}
+
+    /*-- MAKITA -- */
+    .mk-productos-contenedor {
+        .dw-banner-medio h2 {
+            font-size: 15px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .titulo-catalogo p {
+            font-size: 40px;
+        }
+    }
+
+    /*-- METABO -- */
+    .mt-productos-contenedor {
+        .titulo-catalogo p {
+            font-size: 40px;
+        }
+    }
+
+    /*-- DEWALT -- */
+    .dw-productos-contenedor {
+        .titulo-catalogo p {
+            font-size: 40px;
+        }
+    }
 }
 
 @media screen and (max-width:520px) {
 
     /*----INDEX----*/
-    main {
-    }
     .contenedor-portada {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 350px;
-            .titulo1 h1{
-                font-size: 12px;
-            }
-            .titulo2 h3{
-                font-size: 20px;
-                margin-top: 45px;
-                text-align: center;
-                }
-            .titulo2 h4 span{
-                font-size: 25px;
-            }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 350px;
+
+        .titulo1 h1 {
+            font-size: 12px;
         }
+
+        .titulo2 h3 {
+            font-size: 20px;
+            margin-top: 45px;
+            text-align: center;
+        }
+
+        .titulo2 h4 span {
+            font-size: 25px;
+        }
+    }
 
 
 
     .cargo {
         height: 35%;
     }
+
     .cargo img {
         width: 100%;
     }
+
     .titulo1 h1 {
-                font-size: 15px;
-                margin-top: 15px;
+        font-size: 15px;
+        margin-top: 15px;
     }
 
     .titulo2 h3 {
         font-size: 15px;
     }
+
     .container-prod {
         .tarjeta {
             h2 {
                 font-size: 25px;
-                
+
             }
-            p{
+
+            p {
                 font-size: 5px;
                 writing-mode: horizontal-tb;
                 letter-spacing: normal;
@@ -243,40 +257,81 @@
         }
     }
     footer {
-    background: linear-gradient(to bottom, rgb(134, 127, 127), rgb(36, 30, 30));
+        background: linear-gradient(to bottom, rgb(134, 127, 127), rgb(36, 30, 30));
         min-width: 350px;
     }
 
 
 
-/*--- EMPRESA ---*/
+    /*--- EMPRESA ---*/
 
-.columna1 {
-    width: 100vw;
-}
+    .columna1 {
+        width: 100vw;
+    }
 
-/*--- DEWALT ---*/
-.dw-productos-contenedor {
-    .dw-banner-medio{
-        h4 {
-            font-size: 12px;
-            width: 80%;
-            margin: 0 auto;
-            padding: 2%;
+    /*--- DEWALT ---*/
+    .dw-productos-contenedor {
+
+        .card {
+            margin-left: 10%;
+            margin-right: 10%;
+
+            .card-text {
+                font-size: 12px;
+            }
         }
-    } 
 
-    .dw-banner-inferior img {
-        width: 40%;
+        .dw-banner-medio {
+            h4 {
+                font-size: 12px;
+                width: 80%;
+                margin: 0 auto;
+                padding: 2%;
+            }
+
+
+            .dw-banner-inferior img {
+                width: 40%;
+            }
+        }
     }
-}
 
-.mw-productos-contenedor {
-    .mw-banner-medio h4 {
-        font-size: 12px;
-        width: 80%;
-        margin: 0 auto;
+    .mw-productos-contenedor {
+        .card {
+            margin-left: 10%;
+            margin-right: 10%;
+
+            .card-text {
+                font-size: 12px;
+            }
+        }
+
+        .mw-banner-medio h4 {
+            font-size: 10px;
+            width: 80%;
+        }
     }
-}
 
+    .mk-productos-contenedor {
+
+        .card {
+            margin-left: 10%;
+            margin-right: 10%;
+
+            .card-text {
+                font-size: 12px;
+            }
+        }
+    }
+    .mt-productos-contenedor {
+
+            .card {
+                margin-left: 10%;
+                margin-right: 10%;
+
+                .card-text {
+                    font-size: 12px;
+                }
+            }
+    }
 }
