@@ -53,6 +53,7 @@
         }
     }
     .card{
+        margin: 0 auto;
         transition: 1s;
         &:hover{
             transform: scale(1.01);

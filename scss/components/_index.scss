@@ -1,16 +1,8 @@
 .contenedor-portada {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.1fr 0.1fr 0.4fr 0.4fr;
-    grid-template-areas:
-        "cargo"
-        "titulo1"
-        "titulo2"
-        "cont-logos"
-        "cont-logos";
-    margin-bottom: 5%;
-    margin-top: 0;
-    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
     width: 100%;
     object-fit: contain;
 
@@ -20,11 +12,10 @@
 
         img {
             width: 100%;
-            min-width: 350px;
+            min-width: 300px;
         }
     }
 
-    /*  -------------------------------------------- */
     .titulo2 h4 {
         font-size: 12px;
         text-transform: uppercase;
@@ -35,59 +26,58 @@
         left: 50%;
         width: 40em;
         margin: 0 auto;
-        }
-        span {
-            font-size: 45px;
-            letter-spacing: 0;
-            padding: .25em 0 .325em;
-            display: block;
-            margin: 0 auto;
-            text-shadow: 0 0 80px rgba(255, 255, 255, .5);
-            /* Clip Background Image */
-            background: url(../../img/animated-text-fill.png) repeat-y;
-            -webkit-background-clip: text;
-            background-clip: text;
-            /* Animate Background Image */
-            -webkit-text-fill-color: transparent;
-            animation: aitf 80s linear infinite;
-            /* Activate hardware acceleration for smoother animations */
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-        }
     }
-    @keyframes aitf {
-        0% {
-            background-position: 0% 50%;
-        }
 
-        100% {
-            background-position: 100% 50%;
-        }
+    span {
+        font-size: 45px;
+        letter-spacing: 0;
+        padding: .25em 0 .325em;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+        background: url(../../img/animated-text-fill.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: aitf 80s linear infinite;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
     }
-    .titulo1 {
-        h1 {
-            height: 1px;
-            width: 70%;
-            font-family: fira sans;
-            font-size: 25px;
-            padding: 5% 15% 2% 15%;
-            color: grey;
-            text-align: center;
-            grid-area: titulo1;
-            width: fit-content;
+}
 
-        }
+@keyframes aitf {
+    0% {
+        background-position: 0% 50%;
     }
-    .titulo2 {
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.titulo1 {
+    h1 {
         font-family: fira sans;
-        font-weight: bold;
-        width: 90%;
-        margin: 5%;
-        font-size: 55px;
+        font-size: 25px;
+        padding: 2% 10% 2% 10%;
         color: grey;
         text-align: center;
-        grid-area: titulo2;
+        grid-area: titulo1;
+        width: fit-content;
+
     }
+}
+
+.titulo2 {
+    font-family: fira sans;
+    font-weight: bold;
+    width: 90%;
+    margin: 5%;
+    font-size: 55px;
+    color: grey;
+    text-align: center;
+    grid-area: titulo2;
+}
 
 
 ///------ nuevo -------///
@@ -98,29 +88,28 @@ h2 {
 
 .container-prod {
     display: grid;
-    margin: 0 auto;
+    column-gap: 5%;
+    row-gap: 10%;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "logos1 logos2"
         "logos3 logos4";
-    grid-area: cont-logos;
-    width: 83%;
-    height: 100%;
-
+    width: 80%;
 
     .tarjeta {
         position: relative;
         min-width: 150px;
-        min-height: 60px;
-        width: 89%;
-        height: 83%;
+        min-height: 110px;
+        width: 100%;
+        height: 100%;
         background-color: rgb(238, 238, 238);
         overflow: hidden;
         margin-bottom: 5%;
 
         &:before {
-            content: "";
             z-index: 99;
             position: absolute;
             top: -10px;
@@ -133,7 +122,6 @@ h2 {
         }
 
         &:after {
-            content: "";
             z-index: 99;
             position: absolute;
             bottom: -10px;
@@ -159,11 +147,11 @@ h2 {
         p {
             z-index: 99;
             position: absolute;
-            top: 5%;
-            right: 15%;
-            color: #333;
-            opacity: 0.7;
-            font-size: 12px;
+            top: 30%;
+            right: 8%;
+            color: rgb(239, 238, 238);
+            opacity: 0.9;
+            font-size: 14px;
             letter-spacing: 1px;
             writing-mode: vertical-lr;
             -webkit-transition: all 0.2s ease;
@@ -180,33 +168,24 @@ h2 {
             filter: grayscale(100%);
         }
 
-        &:hover i {
-            opacity: 1;
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
+
 
         .boton {
             position: absolute;
-            right: 14px;
-            bottom: 14px;
-            width: 30px;
-            height: 30px;
+            right: 0px;
+            bottom: 0px;
+            width: 20%;
+            height: 100%;
             border: none;
-            border-radius: 30px;
             cursor: pointer;
             outline: none;
-            transition: all 0.5s ease;
+            transition: all 1s ease;
             mix-blend-mode: hard-light;
 
             .linkcito {
-                padding: 1px 12px 1px 5px;
+                padding: 1% 20% 180% 80%;
                 height: 30px;
                 width: 30px;
-            }
-
-            i {
-                font-size: 3rem;
             }
         }
 
@@ -226,29 +205,32 @@ h2 {
 
     .tarj-dw {
         grid-area: logos1;
+        margin: 10% 5% 10% 5%;
 
         .pic {
             background-image: url("../../img/ficha1.jpg");
         }
 
         .boton-dw {
-            background-color: $color-dw;
+            background-color: $color-dw2;
         }
     }
 
     .tarj-mw {
         grid-area: logos2;
+        margin: 10% 5% 10% 5%;
 
         .pic {
             background-image: url("../../img/ficha2.webp");
         }
 
         .boton-mw {
-            background-color: $color-mw;
+            background-color: $color-mw2;
         }
     }
 
     .tarj-mk {
+        margin: 10% 5% 10% 5%;
         grid-area: logos3;
 
         .pic {
@@ -256,19 +238,21 @@ h2 {
         }
 
         .boton-mk {
-            background-color: $color-mk;
+            background-color: $color-mk2;
         }
     }
 
     .tarj-mt {
         grid-area: logos4;
+        margin: 10% 5% 10% 5%;
 
         .pic {
             background-image: url("../../img/ficha4.jpeg");
         }
 
         .boton-mt {
-            background-color: $color-mt;
+            background-color: $color-mt2;
         }
     }
+
 }
