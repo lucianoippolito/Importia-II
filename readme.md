@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Luciano</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
-<p> Mi Proyecto:</p> <li><a href="https://lucianoippolito.github.io/importia/index.html" target="_blank">Importia</a></li>
+<p> Mi Proyecto:</p> <li><a href="https://importia.netlify.app/" target="_blank">Importia</a></li>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
