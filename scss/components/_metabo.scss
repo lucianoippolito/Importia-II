@@ -41,6 +41,7 @@
         img{
             width: 10%;
             background-color: transparent;
+            filter: drop-shadow(0.5em 0.7em 0.5em rgba(0, 0, 0, 0.5));
         }
         h2{
             font-family:inherit;

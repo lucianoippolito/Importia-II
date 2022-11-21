@@ -17,7 +17,6 @@ $color-mt-cards-ctn:#1F4942;
 $bg-color: #f7f6f2;
 $shdow-gray: #d3d3d5;
 
-
 /* -- keyframes -- */
 @keyframes slidein {
     from {
@@ -44,7 +43,15 @@ $shdow-gray: #d3d3d5;
         height: 100%;
     }
 }
+@keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
 
+    100% {
+        background-position: 100% 50%;
+    }
+}
 
 @mixin card-makita-p {
     font-size: 14px;
@@ -60,6 +67,8 @@ $shdow-gray: #d3d3d5;
     }
 @mixin card-dewalt-img {
         padding: 10%;
+        transition: 1s;
+        
     }
 
 @mixin card-milwaukee-img{
